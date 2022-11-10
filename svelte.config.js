@@ -13,12 +13,12 @@ const config = {
 		paths: {
 			base: dev ? '' : '/Personal-Web',
 		},
-		preprocess: [
-			preprocess({
-				postcss: true,
-			}),
-		],
-	}
+	},
+	preprocess: [
+		preprocess({
+			postcss: true,
+		}),
+	],
 };
 
 export default config;
