@@ -1,4 +1,5 @@
 import adapter from '@sveltejs/adapter-static';
+import preprocess from "svelte-preprocess";
 
 const dev = process.env.NODE_ENV === 'development';
 
@@ -10,8 +11,13 @@ const config = {
 			assets: 'docs'
 		}),
 		paths: {
-			base: dev ? '' : '/your-repo-name',
+			base: dev ? '' : '/Personal-Web',
 		},
+		preprocess: [
+			preprocess({
+				postcss: true,
+			}),
+		],
 	}
 };
 
