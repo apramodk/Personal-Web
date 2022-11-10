@@ -11,7 +11,7 @@ const config = {
 			assets: 'docs'
 		}),
 		paths: {
-			base: dev ? '' : '/Personal-Web',
+			base: dev ? '' : '/Personal-Web/',
 		},
 	},
 	preprocess: [
