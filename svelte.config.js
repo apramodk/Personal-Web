@@ -2,7 +2,7 @@ import adapter from '@sveltejs/adapter-static';
 import preprocess from "svelte-preprocess";
 
 const dev = process.env.NODE_ENV === 'development';
-
+console.log(dev);
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
 	kit: {
@@ -11,7 +11,7 @@ const config = {
 			assets: 'docs'
 		}),
 		paths: {
-			base: dev ? '' : '/Personal-Web/',
+			base: dev ? '' : '/Personal-Web',
 		},
 	},
 	preprocess: [
