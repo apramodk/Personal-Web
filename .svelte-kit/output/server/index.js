@@ -2,6 +2,7 @@ import { c as create_ssr_component, s as setContext, v as validate_component, m 
 import * as devalue from "devalue";
 import { parse, serialize } from "cookie";
 import * as set_cookie_parser from "set-cookie-parser";
+import { s as set_paths, b as base, a as assets } from "./chunks/paths.js";
 function afterUpdate() {
 }
 function set_prerendering(value) {
@@ -2147,13 +2148,7 @@ async function respond(request, options, state) {
     return handle_fatal_error(event, options, error2);
   }
 }
-let base = "";
-let assets = "";
-function set_paths(paths) {
-  base = paths.base;
-  assets = paths.assets || base;
-}
-const app_template = ({ head, body, assets: assets2, nonce }) => '<!DOCTYPE html>\n<html lang="en">\n	<head>\n		<meta charset="utf-8" />\n		<link rel="icon" href="' + assets2 + '/favicon.png" />\n		<meta name="viewport" content="width=device-width" />\n		' + head + '\n	</head>\n	<body data-theme="bumblebee">\n		<div>' + body + "</div>\n	</body>\n</html>\n";
+const app_template = ({ head, body, assets: assets2, nonce }) => '<!DOCTYPE html>\n<html lang="en">\n	<head>\n		<meta charset="utf-8" />\n		<link rel="icon" href="' + assets2 + '/favicon.png" />\n		<meta name="viewport" content="width=device-width" />\n		' + head + "\n	</head>\n	<body>\n		<div>" + body + "</div>\n	</body>\n</html>\n";
 const error_template = ({ status, message }) => '<!DOCTYPE html>\n<html lang="en">\n	<head>\n		<meta charset="utf-8" />\n		<title>' + message + `</title>
 
 		<style>

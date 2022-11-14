@@ -1,26 +1,27 @@
 <script>
-    let yes = false;
-    let lol = [
-        "cupcake",
-        "dark",
-    ];
+    import { base } from '$app/paths';
 </script>
 
-<div class="navbar rounded-3xl bg-primary">
+<div class="navbar bg-base-300">
     <div class="flex-1">
         <div class="dropdown dropdown-hover shadow rounded-box">
-            <label class="btn m-1 rounded-3xl">Click</label>
+            <a href="{base}" class="btn btn-ghost normal-case text-xl text-primary hover:text-warning ">APK</a>
             <ul class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
-                <li>About Me</li>
-                <li>My Projects</li>
-                <li>Learn With Me</li>
+                <nav>
+                    <li>
+                        <a href="{base}/about" class="hover:text-error">About Me</a>
+                    </li>
+                    <li>
+                        <a href="{base}/projects" class="hover:text-error">Projects</a>
+                    </li>
+                    <li>
+                        <a href="{base}/learning" class="hover:text-error">Learning</a>
+                    </li>
+                </nav>
             </ul>
         </div>
     </div>
-    <div class="flex-1">
-        <button class="btn btn-ghost normal-case text-xl"><h1>APK</h1></button>
-    </div>
     <div class="flex-2">
-        <input type="checkbox" class="toggle rounded-xl" bind:checked={yes}/>
+        <input type="checkbox" class="toggle rounded-xl"/>
     </div>
 </div>

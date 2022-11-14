@@ -1,1 +1,1 @@
-{"prerendered":{"pages":[["/Personal-Web",{"file":"index.html"}]],"assets":[],"redirects":[],"paths":["/Personal-Web"]},"prerender_map":[["/",true]]}
+{"prerendered":{"pages":[["/Personal-Web/about",{"file":"about.html"}],["/Personal-Web/learning",{"file":"learning.html"}],["/Personal-Web/projects",{"file":"projects.html"}],["/Personal-Web",{"file":"index.html"}]],"assets":[],"redirects":[],"paths":["/Personal-Web/about","/Personal-Web/learning","/Personal-Web/projects","/Personal-Web"]},"prerender_map":[["/",true],["/about",true],["/learning",true],["/projects",true]]}
