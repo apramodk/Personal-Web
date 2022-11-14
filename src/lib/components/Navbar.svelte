@@ -5,7 +5,7 @@
 <div class="navbar bg-base-300">
     <div class="flex-1">
         <div class="dropdown dropdown-hover shadow rounded-box">
-            <a href="{base}" class="btn btn-ghost normal-case text-xl text-primary hover:text-warning ">APK</a>
+            <a href="{base}" class="btn btn-ghost normal-case text-xl text-base-300 bg-warning hover:text-warning ">APK</a>
             <ul class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
                 <nav>
                     <li>
