@@ -4,10 +4,9 @@
 
 </script>
 
-<body data-theme="night">
+<body data-theme="luxury">
   <Navbar/>
   <slot>
-  
   </slot>
 </body>
 
