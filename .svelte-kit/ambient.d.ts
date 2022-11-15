@@ -49,7 +49,6 @@ declare module '$env/static/private' {
 	export const __CF_USER_TEXT_ENCODING: string;
 	export const npm_execpath: string;
 	export const PATH: string;
-	export const LaunchInstanceID: string;
 	export const _: string;
 	export const npm_package_json: string;
 	export const __CFBundleIdentifier: string;
@@ -64,7 +63,6 @@ declare module '$env/static/private' {
 	export const npm_package_name: string;
 	export const XPC_FLAGS: string;
 	export const VSCODE_GIT_ASKPASS_EXTRA_ARGS: string;
-	export const NODE_ENV: string;
 	export const npm_config_node_gyp: string;
 	export const XPC_SERVICE_NAME: string;
 	export const npm_package_version: string;
@@ -80,10 +78,10 @@ declare module '$env/static/private' {
 	export const npm_config_user_agent: string;
 	export const GIT_ASKPASS: string;
 	export const VSCODE_GIT_ASKPASS_NODE: string;
-	export const SECURITYSESSIONID: string;
 	export const COLORTERM: string;
 	export const npm_config_prefix: string;
 	export const npm_node_execpath: string;
+	export const NODE_ENV: string;
 }
 
 /**
@@ -136,7 +134,6 @@ declare module '$env/dynamic/private' {
 		__CF_USER_TEXT_ENCODING: string;
 		npm_execpath: string;
 		PATH: string;
-		LaunchInstanceID: string;
 		_: string;
 		npm_package_json: string;
 		__CFBundleIdentifier: string;
@@ -151,7 +148,6 @@ declare module '$env/dynamic/private' {
 		npm_package_name: string;
 		XPC_FLAGS: string;
 		VSCODE_GIT_ASKPASS_EXTRA_ARGS: string;
-		NODE_ENV: string;
 		npm_config_node_gyp: string;
 		XPC_SERVICE_NAME: string;
 		npm_package_version: string;
@@ -167,10 +163,10 @@ declare module '$env/dynamic/private' {
 		npm_config_user_agent: string;
 		GIT_ASKPASS: string;
 		VSCODE_GIT_ASKPASS_NODE: string;
-		SECURITYSESSIONID: string;
 		COLORTERM: string;
 		npm_config_prefix: string;
 		npm_node_execpath: string;
+		NODE_ENV: string;
 		[key: string]: string | undefined;
 	}
 }

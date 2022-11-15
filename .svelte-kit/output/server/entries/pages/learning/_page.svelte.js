@@ -6,7 +6,10 @@ const css = {
 };
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$result.css.add(css);
-  return `<main class="${"svelte-uf4274"}"><div class="${"card card-side"}"></div>
+  return `<main class="${"svelte-uf4274"}"><div class="${"grid grid-cols-3 gap-4"}"><div class="${"grid w-72 h-24 btn border card bg-base-300 place-items-center"}">Picking A Language</div>
+        <div class="${"grid w-72 h-24 btn border card bg-base-300 place-items-center"}">LeetCode</div>
+        <div class="${"grid w-72 h-24 btn border card bg-base-300 place-items-center"}">Picking A Language</div>
+        <div class="${"grid w-72 h-24 btn border card bg-base-300 place-items-center"}">Picking A Language</div></div>
 </main>`;
 });
 export {
