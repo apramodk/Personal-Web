@@ -5,7 +5,8 @@ export { matchers } from './client-matchers.js';
 	() => import('./nodes/2'),
 	() => import('./nodes/3'),
 	() => import('./nodes/4'),
-	() => import('./nodes/5')];
+	() => import('./nodes/5'),
+	() => import('./nodes/6')];
 
 			export const server_loads = [];
 
@@ -13,7 +14,8 @@ export { matchers } from './client-matchers.js';
 	"/": [2],
 	"/about": [3],
 	"/learning": [4],
-	"/projects": [5]
+	"/learning/Interview": [5],
+	"/projects": [6]
 };
 
 			export const hooks = {

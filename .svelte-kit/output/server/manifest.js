@@ -4,14 +4,15 @@ export const manifest = {
 	assets: new Set([".nojekyll","favicon.png"]),
 	mimeTypes: {".png":"image/png"},
 	_: {
-		entry: {"file":"_app/immutable/start-cd756dbe.js","imports":["_app/immutable/start-cd756dbe.js","_app/immutable/chunks/index-ec9b1e4c.js","_app/immutable/chunks/singletons-e1153883.js","_app/immutable/chunks/paths-6cd3a76e.js"],"stylesheets":[]},
+		entry: {"file":"_app/immutable/start-2b3eae04.js","imports":["_app/immutable/start-2b3eae04.js","_app/immutable/chunks/index-6856b64f.js","_app/immutable/chunks/singletons-f9d12d07.js","_app/immutable/chunks/paths-6cd3a76e.js"],"stylesheets":[]},
 		nodes: [
 			() => import('./nodes/0.js'),
 			() => import('./nodes/1.js'),
 			() => import('./nodes/2.js'),
 			() => import('./nodes/3.js'),
 			() => import('./nodes/4.js'),
-			() => import('./nodes/5.js')
+			() => import('./nodes/5.js'),
+			() => import('./nodes/6.js')
 		],
 		routes: [
 			{
@@ -42,12 +43,21 @@ export const manifest = {
 				endpoint: null
 			},
 			{
+				id: "/learning/Interview",
+				pattern: /^\/learning\/Interview\/?$/,
+				names: [],
+				types: [],
+				optional: [],
+				page: { layouts: [0], errors: [1], leaf: 5 },
+				endpoint: null
+			},
+			{
 				id: "/projects",
 				pattern: /^\/projects\/?$/,
 				names: [],
 				types: [],
 				optional: [],
-				page: { layouts: [0], errors: [1], leaf: 5 },
+				page: { layouts: [0], errors: [1], leaf: 6 },
 				endpoint: null
 			}
 		],
