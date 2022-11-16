@@ -63,7 +63,6 @@ declare module '$env/static/private' {
 	export const npm_package_name: string;
 	export const XPC_FLAGS: string;
 	export const VSCODE_GIT_ASKPASS_EXTRA_ARGS: string;
-	export const NODE_ENV: string;
 	export const npm_config_node_gyp: string;
 	export const XPC_SERVICE_NAME: string;
 	export const npm_package_version: string;
@@ -82,6 +81,7 @@ declare module '$env/static/private' {
 	export const COLORTERM: string;
 	export const npm_config_prefix: string;
 	export const npm_node_execpath: string;
+	export const NODE_ENV: string;
 }
 
 /**
@@ -148,7 +148,6 @@ declare module '$env/dynamic/private' {
 		npm_package_name: string;
 		XPC_FLAGS: string;
 		VSCODE_GIT_ASKPASS_EXTRA_ARGS: string;
-		NODE_ENV: string;
 		npm_config_node_gyp: string;
 		XPC_SERVICE_NAME: string;
 		npm_package_version: string;
@@ -167,6 +166,7 @@ declare module '$env/dynamic/private' {
 		COLORTERM: string;
 		npm_config_prefix: string;
 		npm_node_execpath: string;
+		NODE_ENV: string;
 		[key: string]: string | undefined;
 	}
 }
