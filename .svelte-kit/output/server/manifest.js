@@ -1,10 +1,10 @@
 export const manifest = {
 	appDir: "_app",
 	appPath: "Personal-Web/_app",
-	assets: new Set([".nojekyll","favicon.png"]),
+	assets: new Set([".nojekyll","CNAME","favicon.png"]),
 	mimeTypes: {".png":"image/png"},
 	_: {
-		entry: {"file":"_app/immutable/start-5c617665.js","imports":["_app/immutable/start-5c617665.js","_app/immutable/chunks/index-6856b64f.js","_app/immutable/chunks/singletons-ef5caaf5.js","_app/immutable/chunks/paths-6cd3a76e.js"],"stylesheets":[]},
+		entry: {"file":"_app/immutable/start-af3aedc4.js","imports":["_app/immutable/start-af3aedc4.js","_app/immutable/chunks/index-6856b64f.js","_app/immutable/chunks/singletons-1e73cc7b.js","_app/immutable/chunks/paths-6cd3a76e.js"],"stylesheets":[]},
 		nodes: [
 			() => import('./nodes/0.js'),
 			() => import('./nodes/1.js'),
