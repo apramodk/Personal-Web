@@ -1,1 +1,1 @@
-echo export NODE_ENV=development && npm run dev -- --open
+export NODE_ENV=development && npm run dev -- --open
