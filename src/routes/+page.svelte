@@ -1,2 +1,14 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<main>
+    <div class="contentBody">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/hy_s43yRr-E?si=SbfKlT13oDF9eGKU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+</main>
+
+<style>
+    .contentBody {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 90vh;
+    }
+</style>
