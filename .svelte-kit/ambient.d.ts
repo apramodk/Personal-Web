@@ -38,6 +38,7 @@ declare module '$env/static/private' {
 	export const TERM: string;
 	export const SHELL: string;
 	export const TMPDIR: string;
+	export const npm_package_scripts_lint: string;
 	export const TERM_PROGRAM_VERSION: string;
 	export const npm_package_scripts_dev: string;
 	export const ZDOTDIR: string;
@@ -51,7 +52,9 @@ declare module '$env/static/private' {
 	export const ZSH: string;
 	export const NVM_DIR: string;
 	export const USER: string;
+	export const npm_package_scripts_check_watch: string;
 	export const LS_COLORS: string;
+	export const npm_package_scripts_deploy: string;
 	export const COMMAND_MODE: string;
 	export const PNPM_SCRIPT_SRC_DIR: string;
 	export const npm_package_devDependencies__sveltejs_adapter_static: string;
@@ -93,6 +96,7 @@ declare module '$env/static/private' {
 	export const SHLVL: string;
 	export const HOME: string;
 	export const VSCODE_GIT_ASKPASS_MAIN: string;
+	export const npm_package_scripts_format: string;
 	export const LESS: string;
 	export const LOGNAME: string;
 	export const npm_lifecycle_script: string;
@@ -102,9 +106,9 @@ declare module '$env/static/private' {
 	export const VSCODE_GIT_ASKPASS_NODE: string;
 	export const GIT_ASKPASS: string;
 	export const _P9K_SSH_TTY: string;
+	export const npm_package_scripts_check: string;
 	export const npm_node_execpath: string;
 	export const COLORTERM: string;
-	export const NODE_ENV: string;
 }
 
 /**
@@ -146,6 +150,7 @@ declare module '$env/dynamic/private' {
 		TERM: string;
 		SHELL: string;
 		TMPDIR: string;
+		npm_package_scripts_lint: string;
 		TERM_PROGRAM_VERSION: string;
 		npm_package_scripts_dev: string;
 		ZDOTDIR: string;
@@ -159,7 +164,9 @@ declare module '$env/dynamic/private' {
 		ZSH: string;
 		NVM_DIR: string;
 		USER: string;
+		npm_package_scripts_check_watch: string;
 		LS_COLORS: string;
+		npm_package_scripts_deploy: string;
 		COMMAND_MODE: string;
 		PNPM_SCRIPT_SRC_DIR: string;
 		npm_package_devDependencies__sveltejs_adapter_static: string;
@@ -201,6 +208,7 @@ declare module '$env/dynamic/private' {
 		SHLVL: string;
 		HOME: string;
 		VSCODE_GIT_ASKPASS_MAIN: string;
+		npm_package_scripts_format: string;
 		LESS: string;
 		LOGNAME: string;
 		npm_lifecycle_script: string;
@@ -210,9 +218,9 @@ declare module '$env/dynamic/private' {
 		VSCODE_GIT_ASKPASS_NODE: string;
 		GIT_ASKPASS: string;
 		_P9K_SSH_TTY: string;
+		npm_package_scripts_check: string;
 		npm_node_execpath: string;
 		COLORTERM: string;
-		NODE_ENV: string;
 		[key: string]: string | undefined;
 	}
 }
