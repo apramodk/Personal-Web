@@ -4,17 +4,33 @@
 </script>
 
 <main>
-    <Navbar/>
-    <slot/>
+    <div class="navbar">
+        <Navbar/>
+    </div>
+    <div class="content-safearea">
+        <slot/>
+    </div>
 </main>
 
 <style>
     main {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
         height: 100vh;
         widows: 100vw;
+    }
+    .navbar {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        position: fixed top;
+        /* position: ; */
+    }
+    .content-safearea {
+        min-height: 80%;
+        width: 100vw;
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 </style>

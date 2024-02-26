@@ -1,40 +1,34 @@
+<script lang="ts">
+    import { base } from '$app/paths';
+</script>
 
 <main class="NavBar">
     <div class="Nav_wrapper">
-        <div class="Nav_safeArea">
-            <div class="Web_name">
-                <h1>Akash Pramod Kumar</h1>
-            </div>
-            <div class="NavLinks">
-                <a href="/HCI">HCI Blog</a>
-                <a href="/contact">Contact</a>
-            </div>
+        <div class="Web_name">
+            <a href={base+"/"}><h1>Akash Pramod Kumar</h1></a>
+        </div>
+        <div class="NavLinks">
+            <a href={base+"/HCI"}>HCI Blog</a>
+            <!-- <a href="/">Contact</a> -->
         </div>
     </div>
 </main>
 
 <style>
-    .Nav_wrapper {
-        background-color: #f3f4f6;
-        padding: 1rem 0;
-        width: 100vw;
+    .NavBar {
+        background-color: black;
+        width: 88rem;
+        position: fixed;
+        display: flex;
+        justify-content: center;
     }
-    .Nav_safeArea {
-        width: 100%;
-        max-width: 1200px;
-        margin: 0 auto;
+    .Nav_wrapper {
         display: flex;
         justify-content: space-between;
         align-items: center;
-    }
-    .Web_name {
-        display: flex;
-        align-items: center;
-    }
-    a{
-        text-decoration: none;
-        color: #000;
-        margin: 0 1rem;
+        height: 100%;
+        width: 100%;
+        margin: 0 auto;
     }
 
 </style>
